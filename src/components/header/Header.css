@@ -2,17 +2,6 @@
     box-sizing: border-box;
 }
 
-.input-form {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    padding: 10px 15px;
-    width: 500px;
-    margin: 100px auto;
-    border-radius: 40px;
-}
-
 .searchInput {
     color: #8f8f8f;
     width: 100%;
@@ -38,13 +27,18 @@
     margin: 0 auto;
     padding: 1.6rem;
     background-color: #8f8f8f;
+    grid-column-gap: 15px;
+    border: solid 1px #f2f2f2;
 }
 
 .firstIn {
-    background: rgba(0, 0, 0, .4);
+    background: silver;
     width: 410px;
     height: 48px;
     border-radius: 8px;
+    outline: none;
+    border: none;
+    grid-column-gap: 15px;
 }
 
 ::-webkit-input-placeholder {
@@ -74,11 +68,83 @@
     color: #FFF9E4;
 }
 
-
 .bigMenu {
     display: flex;
     grid-column-gap: 8px;
-    width: 1440px;
+    width: 1340px;
     justify-content: center;
+    outline: none;
+    border: none;
 }
 
+.main {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: #8f8f8f;
+}
+
+.header_wrap {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+.search{
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+[type='search']{
+    border: none;
+    outline: none;
+}
+.fas.fa-search{
+    color: #ccc;
+    width: 14px;
+    height: 14px;
+}
+input[type="text"]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type="text"]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="text"]::-webkit-search-decoration,
+input[type="text"]::-webkit-search-cancel-button,
+input[type="text"]::-webkit-search-results-button,
+input[type="text"]::-webkit-search-results-decoration { display: none; }
+
+.formS {
+    background-color: silver;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    left: 0px;
+
+    color: #6F727A;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.inner-addon .form-control {
+    padding-left: 35px;
+}
+
+@media screen and (max-width: 420px) {
+    .main { display: none;
+    }
+}
+@media (max-width: 1440px) {
+    .main {
+        font-size: calc(20px + (30 - 20) * ((100vw - 320px) / 1200 - 320));
+        padding: calc(10px + (20 - 10) * ((100vw - 320px) / 1200 - 320));
+    }
+}

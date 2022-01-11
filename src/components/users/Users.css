@@ -1,0 +1,17 @@
+.body {
+    height: 2280px;
+    width: 840px;
+}
+
+.line {
+    width: 170px;
+}
+
+.menuOnBody {
+    width: 597px;
+    height: 100px;
+    left: 102px;
+    color: #FFF9E4;
+    grid-column-gap: 8px;
+}
+

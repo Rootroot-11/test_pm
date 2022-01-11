@@ -1,5 +1,5 @@
 const getUsers = () => {
-    return fetch('http://135.181.30.244:27007/api/summaries/')
+    return fetch('http://135.181.30.244:27007/api/summaries/?photo=true')
         .then(value => value.json())
 };
 

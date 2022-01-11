@@ -1,8 +1,15 @@
-export default function User({item}) {
-  return (
-    <div>
-       -- {item.id} -- {item.category} - {item.currency} -- {item.employment_type}
+import './User.css';
 
-    </div>
-  );
+export default function User({item}) {
+    return (
+        <div className="avatar_box">
+         {item.photo}
+            <div className="user_box">
+                <h2>Продавец - консультант</h2>
+                {item.id} -- {item.category} - {item.currency} -- {item.first_name}
+                <hr/>
+                {item.last_name}
+            </div>
+        </div>
+    );
 }

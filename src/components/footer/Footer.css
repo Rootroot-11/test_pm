@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    grid-column-gap: 228px;
+    margin-left: 363px;
+    background-color: teal;
+    color: #FFFFFF;
+}
+
+.icons {
+    display: flex;
+    grid-column-gap: 22px;
+    color: #FFFFFF;
+    margin-top: 87px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.mainFooter {
+    height: 333px;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    max-width: 150px;
+}

@@ -1,7 +1,7 @@
 .smallMenu {
     display: flex;
     margin: 0;
-    width: 301px;
+    width: 1440px;
     height: 48px;
     background-color: silver;
 }
@@ -13,8 +13,16 @@
 .employer {
     color: #FFFFFF;
     font-weight: bold;
- }
+}
 
 .hr {
     color: #EAEAEA;
+}
+
+.smallMenu2 {
+    display: flex;
+    position: absolute;
+    left: 1280px;
+    justify-content: center;
+    align-items: center;
 }
