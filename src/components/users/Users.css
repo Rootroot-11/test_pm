@@ -1,6 +1,9 @@
 .body {
-    height: 2280px;
+    height: 2584px;
     width: 1440px;
+}
+.mainUsers {
+    display: flex;
 }
 
 .line {
@@ -117,11 +120,15 @@ input {
 .languages {
     display: flex;
     flex-flow: column;
+    justify-content: center;
 }
 
 .checkWork div {
     display: flex;
     align-items: center;
+}
+.checkWork {
+    background-color: greenyellow;
 }
 
 .flag-icon {
@@ -139,4 +146,14 @@ input {
     float: left;
     width: 31.2%;
     padding: 15px;
+}
+
+.activeBtn {
+    border: red 2px solid;
+    cursor: pointer;
+    background-color: red;
+
+}.btn {
+    border: #005eff 2px solid;
+    cursor: pointer;
 }

@@ -2,7 +2,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="mainFooter">
+        <footer className="mainFooter col-auto">
 
                 <ul className="ulq">
                     <h4>Другое</h4>
@@ -49,7 +49,7 @@ const Footer = () => {
                 </svg>
             </section>
 
-            <section className="footer">
+            <section className="footer col-auto">
                 <hr className="hr2"/>
                 <a href="#">Privacy policy |</a>
                 <p>© 2021 All rights reserved |</p>

@@ -1,13 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
 .searchInput {
-    color: #8f8f8f;
+    /*color: #8f8f8f;*/
     width: 100%;
     height: 35px;
     line-height: 35px;
     border: none;
+    background-image: url('https://kartinkin.net/uploads/posts/2021-07/1626332621_25-kartinkin-com-p-temno-sinii-fon-so-zvezdami-krasivo-25.jpg');
 }
 
 .search-icon {
@@ -15,7 +12,7 @@
     height: 20px;
     margin-right: 10px;
     order: -1;
-    background-color: blue;
+    background-color: white;
 }
 
 .header_input-block {
@@ -26,13 +23,15 @@
     justify-content: center;
     margin: 0 auto;
     padding: 1.6rem;
-    background-color: #8f8f8f;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/17978689/thumb/1.jpg");
     grid-column-gap: 15px;
+    /*background: rgba(255, 255, 255, 0.15);*/
     border: solid 1px #f2f2f2;
+    width: 1440px;
 }
 
 .firstIn {
-    background: silver;
+    background: rgba(255, 255, 255, 0.15);
     width: 410px;
     height: 48px;
     border-radius: 8px;
@@ -46,17 +45,16 @@
 }
 
 .secondIn {
-    background: rgba(0, 0, 0, .4);
+    background: rgba(255, 255, 255, 0.15);;
     width: 205px;
     height: 48px;
     border-radius: 8px;
 }
 
 .thirdIn {
-    background: rgba(0, 0, 0, .4);
     width: 199px;
     height: 48px;
-    background-color: #FFF9E4;
+    background: #FFF9E4;
     color: #303030;
     border-radius: 8px;
 }
@@ -81,7 +79,8 @@
     display: flex;
     width: 100%;
     height: 120px;
-    background-color: #8f8f8f;
+    background-image: url('https://cs9.pikabu.ru/post_img/big/2018/08/24/11/1535134246160076189.jpg');
+    /* margin 0 auto*!*/
 }
 
 .header_wrap {
@@ -89,34 +88,52 @@
     margin: 0 auto;
     display: flex;
 }
-.search{
+
+.search {
     border: 1px solid #ccc;
     display: inline-block;
     border-radius: 3px;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-[type='search']{
+[type='search'] {
     border: none;
     outline: none;
 }
-.fas.fa-search{
+
+.fas.fa-search {
     color: #ccc;
     width: 14px;
     height: 14px;
 }
-input[type="text"]::-ms-clear {  display: none; width : 0; height: 0; }
-input[type="text"]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+input[type="text"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="text"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
 input[type="text"]::-webkit-search-decoration,
 input[type="text"]::-webkit-search-cancel-button,
 input[type="text"]::-webkit-search-results-button,
-input[type="text"]::-webkit-search-results-decoration { display: none; }
+input[type="text"]::-webkit-search-results-decoration {
+    display: none;
+}
 
 .formS {
     background-color: silver;
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    align-items: center;
     outline: none;
     border: none;
 }
@@ -127,8 +144,6 @@ input[type="text"]::-webkit-search-results-decoration { display: none; }
 
 .inner-addon .glyphicon {
     position: absolute;
-    left: 0px;
-
     color: #6F727A;
     padding: 10px;
     pointer-events: none;
@@ -138,13 +153,66 @@ input[type="text"]::-webkit-search-results-decoration { display: none; }
     padding-left: 35px;
 }
 
-@media screen and (max-width: 420px) {
-    .main { display: none;
-    }
-}
 @media (max-width: 1440px) {
     .main {
         font-size: calc(20px + (30 - 20) * ((100vw - 320px) / 1200 - 320));
         padding: calc(10px + (20 - 10) * ((100vw - 320px) / 1200 - 320));
+    }
+}
+
+input.large {
+    display: inline-block;
+}
+
+@media screen and (device-width: 375px) {
+    .main {
+        width: 100%;
+        height: 280px;
+    }
+
+    div {
+        width: 35px
+    }
+
+    .search svg {
+        height: 14px;
+    }
+
+    .mobileLocation {
+        margin-top: 110px;
+    }
+
+    .mobileButSearch {
+        margin-top: 170px;
+    }
+
+    input.large {
+        display: none;
+    }
+
+    input.small {
+        display: inline-block;
+        background-image: url("https://ak.picdn.net/shutterstock/videos/17978689/thumb/1.jpg");
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        width: 320px;
+        height: 48px;
+    }
+
+    .inner-addon .glyphicon {
+        position: absolute;
+        background-color: blue;
+        pointer-events: none;
+    }
+
+    form {
+        display: flex;
+        position: absolute;
+        /*border: 1px solid #ccc;*/
+        border-radius: 3px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
     }
 }

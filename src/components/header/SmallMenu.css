@@ -3,7 +3,7 @@
     margin: 0;
     width: 1440px;
     height: 48px;
-    background-color: silver;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/17978689/thumb/1.jpg");
 }
 
 .candidate {
@@ -25,4 +25,10 @@
     left: 1280px;
     justify-content: center;
     align-items: center;
+    grid-column-gap: 12px;
+    color: #EAEAEA;
+}
+
+.smallMenu2 a {
+    color: #FFFFFF;
 }

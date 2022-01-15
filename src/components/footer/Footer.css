@@ -1,7 +1,7 @@
 footer {
     display: flex;
     grid-column-gap: 228px;
-    margin-left: 363px;
+    /*margin-left: 363px;*/
     background-color: teal;
     color: #FFFFFF;
     width: 100%;
@@ -12,6 +12,9 @@ footer {
     grid-column-gap: 22px;
     color: #FFFFFF;
     margin-top: 87px;
+}
+.icons svg {
+    cursor: pointer;
 }
 
 footer a {
