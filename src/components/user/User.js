@@ -3,7 +3,6 @@ import {useState} from "react";
 
 export default function User({item, users}) {
     let [toggle, setToggle] = useState('show')
-
     return (
         <div>
             {users.map((item) => (
@@ -37,7 +36,6 @@ export default function User({item, users}) {
                     </div>
                 </div>)
             )}
-
         </div>
     );
 }

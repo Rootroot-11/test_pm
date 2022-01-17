@@ -1,8 +1,13 @@
+.mainFooter {
+    height: 333px;
+    display: flex;
+}
+
 footer {
     display: flex;
     grid-column-gap: 228px;
-    /*margin-left: 363px;*/
-    background-color: teal;
+    padding-left: 363px;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/17978689/thumb/1.jpg");
     color: #FFFFFF;
     width: 100%;
 }
@@ -20,11 +25,6 @@ footer {
 footer a {
     text-decoration: none;
     color: #FFFFFF;
-}
-
-.mainFooter {
-    height: 333px;
-    display: flex;
 }
 
 ul {
