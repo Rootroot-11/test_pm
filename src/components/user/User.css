@@ -1,6 +1,8 @@
 .user_box {
-
+    display: flex;
+    margin-left: 99px;
 }
+
 .smallWindow {
     display: inline-flex;
     margin-left: 150px;
@@ -12,16 +14,44 @@
 
 .hide {
     display: none;
+    width: 240px;
 }
+
 .block {
     display: block;
+
 }
 
 .reklamation:after {
     cursor: pointer;
     content: '\2807';
-    font-size: 3em;
+    font-size: 2em;
     color: #0096C7;
-    height: 16px;
-    width: 3px;
+    width: 46px;
+    height: 46px;
+    border-color: #EAEAEA;
+    border-style: solid;
+}
+.divWithall {
+    width: 772px;
+    background-color: #EAEAEA;
+}
+.heart {
+    border-style: solid;
+    border-color: #EAEAEA;
+    width: 46px;
+    height: 46px;
+}
+.oneSmallElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reklama {
+    display: inline-flex;
+    border-color: #EAEAEA;
+    border-style: solid;
+    width: 174px;
+    height: 94px;
 }

@@ -35,7 +35,10 @@ export default function Users() {
             <div className="menuOnBody">
                 <h1>Мы подобрали <b>451 642</b> резюме</h1>
                 <hr className="line"/>
-                <p>Резюме продавец консультант во Всей Украине</p>
+                <div className="smallWindows">
+                    <p>Резюме продавец консультант во Всей Украине</p>
+                    <b>за все время</b>
+                </div>
             </div>
             <section className="mainUsers">
                 <div className="oneUser">

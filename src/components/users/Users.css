@@ -172,3 +172,15 @@ input {
     background: transparent;
     color: #ADADAD;
 }
+
+.smallWindows {
+    display: flex;
+}
+
+.smallWindows b {
+    display: flex;
+    color: #0096C7;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 20px;
+}
