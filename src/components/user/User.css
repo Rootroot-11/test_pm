@@ -1,6 +1,7 @@
 .user_box {
     display: flex;
     margin-left: 99px;
+    grid-column-gap: 25px;
 }
 
 .smallWindow {
@@ -32,22 +33,27 @@
     border-color: #EAEAEA;
     border-style: solid;
 }
-.divWithall {
+
+.divWithAll {
     width: 772px;
-    background-color: #EAEAEA;
+    border-color: #EAEAEA;
+    border-style: solid;
 }
+
 .heart {
     border-style: solid;
     border-color: #EAEAEA;
     width: 46px;
     height: 46px;
 }
+
 .oneSmallElement {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 .reklama {
     display: inline-flex;
     border-color: #EAEAEA;

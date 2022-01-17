@@ -8,13 +8,13 @@ export default function User({item, users}) {
         <div>
             {users.map((item) => (
                 <div className="user_box">
-                    <div className="divWithall">
+                    <div className="divWithAll">
                         <h2>Продавец - консультант</h2>
                         <img src={item.photo} alt="qwerty"/>
                         {item.id} -- {item.category} -- {item.first_name}
 
-
                         {item.last_name}</div>
+
                     <div className="oneSmallElement">
                         <p className={toggle}>
                             <div><p>Пожаловаться</p><p>Скрыть кандидата</p></div>
