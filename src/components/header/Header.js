@@ -23,7 +23,7 @@ const Header = () => {
                                 <path fill-rule="evenodd"
                                       d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
-                            <a href="#"> Войти</a>
+                            <a href="#">Войти</a>
                         </div>
                     </div>
                     <div className="header_input-block">
@@ -40,7 +40,6 @@ const Header = () => {
                                         </svg>
                                         <input type="text" placeholder="На какую должность вы ищете кандидата?"
                                                className="firstIn large"/>
-                                        {/*<input className="small search" placeholder="Поиск"/>*/}
                                     </div>
                                 </form>
                             </aside>

@@ -1,6 +1,27 @@
 .user_box {
+
+}
+.smallWindow {
+    display: inline-flex;
+    margin-left: 150px;
+    border-color: red;
+    border-style: solid;
+    width: 174px;
+    height: 94px;
 }
 
-.avatar_box {
+.hide {
+    display: none;
+}
+.block {
+    display: block;
+}
 
+.reklamation:after {
+    cursor: pointer;
+    content: '\2807';
+    font-size: 3em;
+    color: #0096C7;
+    height: 16px;
+    width: 3px;
 }

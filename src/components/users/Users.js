@@ -4,12 +4,12 @@ import User from "../user/User";
 import '../header/Header.css';
 import './Users.css';
 import {Filters} from "../bodyWithFilters/BodyWithFilters";
+import {Header} from "../header/Header";
 
 export default function Users() {
     const [users, setUsers] = useState([]);
     const [page_count, setPage_Count] = useState([]);
     const [page, setPage] = useState(1);
-    const [value] = useState('');
 
     useEffect(() => {
         getUsers(page, 10)
@@ -22,6 +22,7 @@ export default function Users() {
                 setPage_Count(arr);
             });
     }, [page]);
+    const [value, setValue] = useState([]);
 
     const paginationHandler = (num) => {
         setPage(page + num)
@@ -29,19 +30,22 @@ export default function Users() {
 
     return (
         <div className="body">
+            <Header/>
+
             <div className="menuOnBody">
-                <h1>Мы подобрали 451 642 резюме</h1>
+                <h1>Мы подобрали <b>451 642</b> резюме</h1>
                 <hr className="line"/>
                 <p>Резюме продавец консультант во Всей Украине</p>
             </div>
-<section className="mainUsers">
-            <div className="oneUser">
-                {
-                    users.map(value => <User item={value} key={value.id}/>)
-                }
-            </div>
-            <Filters/>
-</section>
+            <section className="mainUsers">
+                <div className="oneUser">
+                    {
+                        <User item={value} users={users} key={value.id}/>
+                    }
+                </div>
+
+                <Filters/>
+            </section>
             <div className="pagination">
                 <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
                 {
@@ -51,7 +55,6 @@ export default function Users() {
                 }
                 <button disabled={page >= page_count} onClick={() => paginationHandler(1)}>next</button>
             </div>
-
         </div>
     );
 }
