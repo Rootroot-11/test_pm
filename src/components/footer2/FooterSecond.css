@@ -1,0 +1,17 @@
+.footerSecond {
+    display: flex;
+    height: 80px;
+    color: #FFFFFF;
+    padding-left: 477px;
+    align-items: center;
+    grid-column-gap: 30px;
+}
+
+.footerSecond a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.lineOnFooter {
+
+}

@@ -3,6 +3,11 @@
     width: 1440px;
     height: 48px;
     padding-left: 33px;
+    grid-column-gap: 15px;
+}
+
+.smallMenu p {
+    cursor: pointer;
 }
 
 .candidate {
@@ -16,6 +21,12 @@
 
 .hr {
     color: #EAEAEA;
+}
+
+.smallLine {
+    color: #FFFFFF;
+    width: 1px;
+    height: 12px;
 }
 
 .smallMenu2 {

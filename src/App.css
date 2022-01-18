@@ -16,3 +16,6 @@
     padding: calc(10px + (20 - 10) * ((100vw - 320px) / 1200 - 320));
   }
 }
+.bigMainFooter {
+  background-image: url("https://ak.picdn.net/shutterstock/videos/17978689/thumb/1.jpg");
+}

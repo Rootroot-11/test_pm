@@ -7,8 +7,10 @@ export default function App() {
     return (
         <div className="wrap">
             <Users/>
-            <Footer/>
-            <FooterSecond/>
+            <div className="bigMainFooter">
+                <Footer/>
+                <FooterSecond/>
+            </div>
         </div>
     );
 }

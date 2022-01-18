@@ -22,29 +22,42 @@
     display: block;
 
 }
-
-.reklamation:after {
-    cursor: pointer;
-    content: '\2807';
-    font-size: 2em;
-    color: #0096C7;
+.reklamation {
     width: 46px;
     height: 46px;
+    border-radius: 8px;
     border-color: #EAEAEA;
     border-style: solid;
+    border-width: 0.5px;
+}
+
+.reklamation:after {
+    display: flex;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-left: 14px;
+    content: '\2807';
+    font-size: 1.5em;
+    color: #0096C7;
 }
 
 .divWithAll {
     width: 772px;
     border-color: #EAEAEA;
     border-style: solid;
+    border-width: 1px;
 }
 
 .heart {
-    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-color: #EAEAEA;
+    border-style: solid;
+    border-width: 0.5px;
     width: 46px;
     height: 46px;
+    border-radius: 8px;
 }
 
 .oneSmallElement {

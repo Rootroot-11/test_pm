@@ -1,5 +1,5 @@
 .mainFooter {
-    height: 333px;
+    height: 253px;
     display: flex;
 }
 
@@ -7,7 +7,6 @@ footer {
     display: flex;
     grid-column-gap: 228px;
     padding-left: 363px;
-    background-image: url("https://ak.picdn.net/shutterstock/videos/17978689/thumb/1.jpg");
     color: #FFFFFF;
     width: 100%;
 }

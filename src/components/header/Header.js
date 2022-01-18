@@ -9,8 +9,10 @@ const Header = () => {
                 <Row>
                     <div className="smallMenu">
                         <p className="candidate">Сооискатель</p>
-                        <p className="employer">| Работодатель</p>
-                        <p className="hr">| HR</p>
+                        <p className="smallLine">|</p>
+                        <p className="employer">Работодатель</p>
+                        <p className="smallLine">|</p>
+                        <p className="hr">HR</p>
                         <div className="smallMenu2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                  className="bi bi-globe" viewBox="0 0 16 16">
